@@ -70,8 +70,12 @@ span {
     border-radius: 2rem;
     color: var(--purple);
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out; 
-    transition: all 0.3s ease-in-out; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .button {
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .button:hover {
@@ -105,7 +109,12 @@ span {
     color: white;
     text-decoration: none;
     text-align: center;
-    transition: color 0.3s ease-in-out; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .social-item {
+        transition: color 0.3s ease-in-out;
+    }
 }
 
 .social-item:hover {
@@ -130,7 +139,7 @@ span {
     }
 
     .image {
-        width: 700px;
+        width: 43.75rem;
     }
 
     .heading {
